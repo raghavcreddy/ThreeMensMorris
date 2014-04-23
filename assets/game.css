@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@font-face {
+    font-family: 'Arcade';
+    src: url('fonts/ArcadeClassic.woff') format('woff');
+}
+.navbar .navbar-brand {} .navbar-default .navbar-nav > li > a > i.fa-twitter {
+    color: #55acef;
+}
+.navbar-default .navbar-nav > li > a > i.fa-github {
+    color: #000;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #00b2b2;
+}
+.A {
+    background: rgb(157, 213, 58);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), color-stop(100%, rgba(124, 188, 10, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.B {
+    background: rgb(254, 204, 177);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(254, 204, 177, 1) 0%, rgba(241, 116, 50, 1) 50%, rgba(234, 85, 7, 1) 51%, rgba(251, 149, 94, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(254, 204, 177, 1)), color-stop(50%, rgba(241, 116, 50, 1)), color-stop(51%, rgba(234, 85, 7, 1)), color-stop(100%, rgba(251, 149, 94, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(254, 204, 177, 1) 0%, rgba(241, 116, 50, 1) 50%, rgba(234, 85, 7, 1) 51%, rgba(251, 149, 94, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(254, 204, 177, 1) 0%, rgba(241, 116, 50, 1) 50%, rgba(234, 85, 7, 1) 51%, rgba(251, 149, 94, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(254, 204, 177, 1) 0%, rgba(241, 116, 50, 1) 50%, rgba(234, 85, 7, 1) 51%, rgba(251, 149, 94, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, rgba(254, 204, 177, 1) 0%, rgba(241, 116, 50, 1) 50%, rgba(234, 85, 7, 1) 51%, rgba(251, 149, 94, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#feccb1', endColorstr='#fb955e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.A:before {
+    content: 'A';
+}
+.B:before {
+    content: 'B';
+}
+.draggable {
+    font-family: 'Arcade';
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 0;
+    border-radius: 50%;
+    cursor: move;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.droppable {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    float: left;
+    border: 3px solid #ffdf00;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: rgb(226, 226, 226);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(254, 254, 254, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.dropTargetHover {
+    border: 3px solid orange;
+}
+.dropTargetActive {
+    background: rgb(183, 222, 237);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(183, 222, 237, 1) 0%, rgba(113, 206, 239, 1) 50%, rgba(33, 180, 226, 1) 51%, rgba(183, 222, 237, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(183, 222, 237, 1)), color-stop(50%, rgba(113, 206, 239, 1)), color-stop(51%, rgba(33, 180, 226, 1)), color-stop(100%, rgba(183, 222, 237, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(183, 222, 237, 1) 0%, rgba(113, 206, 239, 1) 50%, rgba(33, 180, 226, 1) 51%, rgba(183, 222, 237, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(183, 222, 237, 1) 0%, rgba(113, 206, 239, 1) 50%, rgba(33, 180, 226, 1) 51%, rgba(183, 222, 237, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(183, 222, 237, 1) 0%, rgba(113, 206, 239, 1) 50%, rgba(33, 180, 226, 1) 51%, rgba(183, 222, 237, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, rgba(183, 222, 237, 1) 0%, rgba(113, 206, 239, 1) 50%, rgba(33, 180, 226, 1) 51%, rgba(183, 222, 237, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+.dropTargetWon {
+    border: 3px solid red;
+}
+#reset {
+    font-weight: 300;
+}
+.gameWin {
+    font-family: 'Arcade';
+    font-size: 3em;
+    color: #ffdf00;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    letter-spacing: 5px;
+}
+#log {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    padding: 10px 0 0 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    line-height: 30px;
+}
+#log i.fa {
+    color: #00b2b2;
+}
+.coins {
+    border: 2px dashed red;
+    margin-left: -15px;
+    padding-left: 10px;
+    display: table;
+}

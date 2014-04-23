@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.1.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.0.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/game.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Three Men's Morris</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="modal" href="#about">How to play?</a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/raghavcreddy/ThreeMensMorris" target="_blank">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-6">
+
+                <div class="coins">
+                    <div class="draggable A" data-player="A" data-in-target="0" id="A1"></div>
+                    <div class="draggable A" data-player="A" data-in-target="0"></div>
+                    <div class="draggable A" data-player="A" data-in-target="0"></div>
+                    <div class="draggable B" data-player="B" data-in-target="0"></div>
+                    <div class="draggable B" data-player="B" data-in-target="0"></div>
+                    <div class="draggable B" data-player="B" data-in-target="0"></div>
+                </div>
+
+                <div style="clear:both">
+                    <br>
+                    <br>
+                </div>
+
+                <div class="row">
+                    <div id="droppable1" class="droppable" data-target-id="1" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable2" class="droppable" data-target-id="2" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable3" class="droppable" data-target-id="3" data-contains-coin="false"></div>
+                </div>
+
+                <div style="height:49px;"></div>
+
+                <div class="row">
+                    <div id="droppable4" class="droppable" data-target-id="4" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable5" class="droppable" data-target-id="5" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable6" class="droppable" data-target-id="6" data-contains-coin="false"></div>
+                </div>
+
+                <div style="height:49px;"></div>
+
+                <div class="row">
+                    <div id="droppable7" class="droppable" data-target-id="7" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable8" class="droppable" data-target-id="8" data-contains-coin="false"></div>
+                    <div class="col-md-1"></div>
+                    <div id="droppable9" class="droppable" data-target-id="9" data-contains-coin="false"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div id="log">
+                    <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Any player start by moving a coin either 'A' or 'B'
+                </div>
+
+                <br>
+                <br>
+
+                <button class="btn btn-danger" id="reset">Reset Game</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <h3 class="modal-title">How to play</h3>
+                </div>
+                <div class="modal-body">
+                    <h4>About</h4>
+                    <p>Three Men's Morris, closely related to the board games Morabaraba, Six Men's Morris, Nine Men's Morris, and Twelve Men's Morris, is an abstract strategy game that dates back to before 1400 BC.</p>
+                    <br>
+                    <h4>Goal</h4>
+                    <p>The goal of Three Men's Morris is to be the first player to get your three pieces lined up along a straight line.</p>
+                    <br>
+                    <h4>Gameplay</h4>
+                    <p>Setup Phase: Players taking turns laying their pieces on vacant points.
+                        <br>
+                        <br>Regular Phase: After all six pieces have been laid down, the regular phase begins. In this phase, a turn consists of sliding a piece along a line to a vacant point.
+                        <br>
+                        <br>Whenever a player creates a string of three pieces on one line, he immediately wins. (This can happen during the setup phase or the regular phase.)</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="assets/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="assets/game.js"></script>
+
+</html>
