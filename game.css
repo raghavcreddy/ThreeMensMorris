@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 @font-face {
     font-family: 'Arcade';
-    src: url('fonts/ArcadeClassic.woff') format('woff');
+    src: url('ArcadeClassic.woff') format('woff');
 }
 .navbar .navbar-brand {} .navbar-default .navbar-nav > li > a > i.fa-twitter {
     color: #55acef;

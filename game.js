@@ -1,6 +1,3 @@
-/**************************
-who started the game
-***************************/
 function connect(div1, div2, color, thickness, from, to) {
     var off1 = getOffset(div1),
         off2 = getOffset(div2),
