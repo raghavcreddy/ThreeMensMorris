@@ -2,6 +2,8 @@ Three Men's Morris
 ===============
 >A JavaScript implementation of Three Men's Morris board game.
 
+![alt tag](https://raw.githubusercontent.com/raghavcreddy/ThreeMensMorris/gh-pages/images/game.png)
+
 About
 -----
 Three Men's Morris, closely related to the board games Morabaraba, Six Men's Morris, Nine Men's Morris, and Twelve Men's Morris, is an abstract strategy game that dates back to before 1400 BC.
