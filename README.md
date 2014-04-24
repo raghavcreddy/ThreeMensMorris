@@ -4,7 +4,7 @@ Three Men's Morris
 
 ![alt tag](https://raw.githubusercontent.com/raghavcreddy/ThreeMensMorris/gh-pages/images/game.png)
 
-<h2><a href="http://raghavcreddy.github.io/ThreeMensMorris/" target="_blank">example</a></h2>
+<h3><a href="http://raghavcreddy.github.io/ThreeMensMorris/" target="_blank">Play Online</a></h3>
 
 About
 -----
