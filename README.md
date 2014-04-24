@@ -4,6 +4,8 @@ Three Men's Morris
 
 ![alt tag](https://raw.githubusercontent.com/raghavcreddy/ThreeMensMorris/gh-pages/images/game.png)
 
+<h2><a href="http://raghavcreddy.github.io/ThreeMensMorris/" target="_blank">example</a></h2>
+
 About
 -----
 Three Men's Morris, closely related to the board games Morabaraba, Six Men's Morris, Nine Men's Morris, and Twelve Men's Morris, is an abstract strategy game that dates back to before 1400 BC.
