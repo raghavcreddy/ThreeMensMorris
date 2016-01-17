@@ -1,6 +1,3 @@
-/**************************
-who started the game
-***************************/
 function connect(div1, div2, color, thickness, from, to) {
     var off1 = getOffset(div1),
         off2 = getOffset(div2),
@@ -285,7 +282,7 @@ $(document).ready(function () {
             scrollTop: 0
         }, 600);
         setTimeout(function () {
-            $('#log').html('<i class="fa fa-info-circle"></i>&nbsp;&nbsp; Any player start by moving a coin either \'A\' or \'B\'');
+            $('#log').html('<i class="fa fa-info-circle"></i>&nbsp;&nbsp; Any player can start by moving a coin either \'A\' or \'B\'');
             $('#reset').html('Reset Game').removeClass('btn-success').addClass('btn-danger');
         }, 600);
 
